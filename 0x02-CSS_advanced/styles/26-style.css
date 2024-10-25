@@ -63,7 +63,9 @@
 /* Base styles */
 
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -96,7 +98,7 @@ a:any-link {
     text-decoration: none;
 }
 
-a:visited{
+a[href]{
     font-style: italic;
 }
 
@@ -193,7 +195,7 @@ display: none;
 
 .card-services a{
     display: block;
-    padding: 2em;
+    padding: 2rem;
     background-color: var(--color-light-grey);
 }
 
